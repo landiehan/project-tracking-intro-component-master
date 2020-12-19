@@ -85,6 +85,10 @@
     @media screen and (min-width: $bp-desktop) {
       font-size: 15px;
       margin-top: 6.5rem;
+
+      &:active {
+        opacity: .8;
+      }
     }
   }
 

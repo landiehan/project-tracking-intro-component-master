@@ -64,14 +64,34 @@
       text-transform: uppercase;
       margin-right: 4rem;
 
+      &::after {
+        content: '';
+        display: block;
+        border-bottom: 1px solid $very-dark-blue;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: center;
+      }
+
       &:last-of-type {
         margin-right: 0;
+        margin-left: 4rem;
 
         color: $grayish-blue;
+        position: relative;
         &::before {
           content: '•';
           display: inline-block;
-          width: 4rem;
+          position: absolute;
+          left: -4rem;
+        }
+
+        &::after {
+          border-bottom-color: $grayish-blue;
         }
       }
     }
