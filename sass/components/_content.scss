@@ -1,0 +1,103 @@
+.content {
+  &__hero-container {
+    overflow: hidden;
+    height: 265px;
+    padding-top: 2.3rem;
+    padding-left: 1.1rem;
+
+    @media screen and (min-width: $bp-desktop) {
+      height: unset;
+      width: 50%;
+    }
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__detail-container {
+    margin-top: 9rem;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 4rem;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding-left: 165px;
+      max-width: 50%;
+    }
+  }
+
+  &__new-feature {
+    color: $grayish-blue;
+    text-transform: uppercase;
+
+    &--new {
+      color: white;
+      background-color: $very-dark-blue;
+      padding: .25rem 1rem;
+      border-radius: 9999px;
+      font-weight: 700;
+    }
+
+    &--link {
+      letter-spacing: 4px;
+      padding-left: 1.5rem;
+    }
+  }
+
+  &__title {
+    color: $very-dark-blue;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 6rem;
+    }
+  }
+
+  &__tagline {
+    color: $dark-grayish-blue;
+    font-family: $font-body;
+    font-size: 2rem;
+    letter-spacing: -.06rem;
+    
+    &--block {
+      display: block;
+    }
+  }
+
+  &__demo-btn {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  
+    color: rgba(white, .8);
+    background-color: $red;
+    border-radius: 5px;   
+    padding: 1rem 2.2rem;
+    margin-top: 3rem;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 15px;
+      margin-top: 6.5rem;
+    }
+  }
+
+  &__preview {
+    text-transform: uppercase;
+    color: $grayish-blue;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    padding-left: 1.5rem;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 15px;
+      letter-spacing: 0.2em;
+    }
+  }
+}
