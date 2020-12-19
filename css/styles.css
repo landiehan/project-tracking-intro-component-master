@@ -118,14 +118,31 @@ a {
     text-transform: uppercase;
     margin-right: 4rem;
   }
+  .menu > li::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #242942;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+  .menu > li:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+  }
   .menu > li:last-of-type {
     margin-right: 0;
+    margin-left: 4rem;
     color: #a0a1ac;
+    position: relative;
   }
   .menu > li:last-of-type::before {
     content: "•";
     display: inline-block;
-    width: 4rem;
+    position: absolute;
+    left: -4rem;
+  }
+  .menu > li:last-of-type::after {
+    border-bottom-color: #a0a1ac;
   }
 }
 
@@ -236,6 +253,9 @@ a {
   .content__demo-btn {
     font-size: 15px;
     margin-top: 6.5rem;
+  }
+  .content__demo-btn:active {
+    opacity: 0.8;
   }
 }
 .content__preview {
