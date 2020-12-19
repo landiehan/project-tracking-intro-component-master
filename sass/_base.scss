@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: $font-default;
+
+  width: 375px;
+  @media screen and (min-width: $bp-desktop) {
+    width: 1440px;
+  }
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+}
+
+.bg {
+  width: 50%;
+  height: 43rem;
+  border-bottom-left-radius: 7rem;
+  background-color: $light-grayish-blue;
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+}
+
+/* reset default styles */
+button {
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
